@@ -1,9 +1,10 @@
 config:
   ignore:
     - "README.md"
-    - ".ticonfig.yaml"
+    - ".ticonfig.yml"
     - "**/Dockerfile*"
     - "Jenkinsfile"
     - "**/*.md"
     - "**/*.py"
     - "**/*.txt"
+    - "**/*.yml"
