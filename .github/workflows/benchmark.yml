@@ -51,7 +51,7 @@ jobs:
           echo "Current time has been saved to $filename"
       - name: Test UTs
         run: |
-          gradle --build-cache unitTest -PmaxParallelForks=32 -PignoreFailures=true
+          gradle unitTest -PmaxParallelForks=32 -PignoreFailures=true
       - name: Upload Duration
         run: |
           python gha_add_rows_ti.py
