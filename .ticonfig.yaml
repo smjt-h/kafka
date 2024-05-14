@@ -13,3 +13,4 @@ config:
     - "**/*.scala"
     - "**/*.sh"
     - "benchmark.yml"
+    - "**/*.json"
