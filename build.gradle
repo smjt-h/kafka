@@ -523,6 +523,11 @@ subprojects {
   }
 
   task unitTest(type: Test, dependsOn: compileJava) {
+
+    if(System.getProperty("HARNESS_JAVA_AGENT")) {
+      jvmArgs += [System.getProperty("HARNESS_JAVA_AGENT")]
+    }
+	  
     maxParallelForks = maxTestForks
     ignoreFailures = userIgnoreFailures
 
